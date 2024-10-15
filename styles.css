@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Kanit', sans-serif;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+
+.bg-coverhome {
+  background: url('images/home1.png') no-repeat center center / cover fixed;
+  width: fullscreen;
+  
+}
+
+.custom-paragraph {
+  max-width: 600px; /* Optional: Maximum width */
+}
+
+.btn-darkcustom{
+  background-color: #080808e6;
+  color: #ffffff;
+}
+
+.btn-darkcustom:hover{
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.452);
+}
+
+.btn-outline-darkcustom{
+  background-color: #ffffff;
+  color: #080808e6;
+  border: 1px solid #080808e6;
+}
+
+.btn-outline-darkcustom:hover{
+  background-color: #080808e6;
+  color: #ffffffe6;
+  border: 1px solid #080808e6;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.452);
+}
+
+.btn-outline-darkcustom.active {
+  background-color: #080808e6;
+  color: #ffffffe6;
+  border: 1px solid #080808e6;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+
+.btn-gray{
+  background-color: #7979792a;
+}
+
+.btn-gray:hover{
+  background-color: #7979798a;
+}
+
+.exp-section {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+.exp-section:hover {
+  background-color: #f5f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+}
+.exp-section h5 {
+  color: #343a40;
+}
+.exp-section p {
+  color: #6c757d;
+}
+.exp-section hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.gpa-badge {
+  display: inline-block;
+  background-color: #000000;
+  color: #fafafa;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.text-skill{
+  background-color:#080808e6;
+  display: inline-block;
+  margin-bottom: 4px;
+  padding: 4px 8px;
+  border-radius: 5px;
+  color: white; /* สีของข้อความ */
+}
+
+#certificate .cert-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+
+#certificate .cert-card:hover {
+  transform: scale(1.05);
+}
+.cert-card img {
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+  height: 300px; /* Set a fixed height */
+}
+
+#certificate .cert-card-body {
+  padding: 20px;
+  height: 100px;
+  
+}
+#certificate .cert-card-title {
+  font-size: 1.0rem;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  #certificate .cert-card-body {
+    padding: 20px;
+    height: auto;
+  }
+}
+
+/* Ensure the modal has a larger size */
+.modal-dialog {
+  max-width: 50%; /* Adjust the width of the modal as needed */
+}
+
+.modal-content {
+  background-color: #fff;
+}
+
+.modal-body {
+  text-align: center;
+}
+
+.modal-body img {
+  width: 100%;
+  max-height: 80vh; /* Adjust the height to ensure it fits within the viewport */
+  object-fit: contain; /* Ensure the image scales correctly */
+}
+
+@media (max-width: 768px) {
+  .modal-dialog {
+    max-width: 95%; /* ให้ Modal ใช้ความกว้างเต็มหน้าจอ */
+    margin: 0.5rem auto; /* ลด margin สำหรับหน้าจอเล็ก */
+  }
+
+  .modal-body img {
+    width: 100%;
+    max-height: 80vh; /* ลดความสูงสำหรับหน้าจอเล็ก */
+    object-fit: contain;
+  }
+}
+
+
+
+
+.contact-card{
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact-card:hover{
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.452);
+  background-color: #f9f9f9;
+}
+
+.contact-form {
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.contact-card h5, .contact-form h5 {
+  margin-bottom: 15px;
+  color: #555555;
+}
+
+.contact-card p, .contact-form p {
+  margin-bottom: 10px;
+  color: #6c757d;
+}
+
+.contact-card label, .contact-form label {
+  margin-bottom: 10px;
+  color: #6c757d;
+}
+
+/* Ensure the contact card and form have equal heights on larger screens */
+@media (min-width: 768px) {
+  .row {
+    display: flex;
+  }
+  
+  .contact-card, .contact-form {
+    flex: 1;
+    margin: 10px;
+  }
+}
+
+.name-header {
+  color: #555555;
+  margin-top: 50px;
+  font-size: 2rem; /* Adjust as needed */
+  font-weight: bold;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Adjust spacing between icons */
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* Size of the circle */
+  height: 40px; /* Size of the circle */
+  border-radius: 50%;
+  background-color: #f0f0f0; /* Background color of the circle */
+  color: #333; /* Icon color */
+  text-decoration: none;
+  font-size: 1.5rem; /* Icon size */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+  background-color: #333; /* Background color on hover */
+  color: #fff; /* Icon color on hover */
+}
+
+@media (max-width: 768px) {
+  .name-header {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+}
+
+.footer-end{
+  margin-top: 5%;
+}
+
+@media (max-width: 768px) {
+  .footer-end{
+    margin-top: 30%;
+  }
+}
+
+.footer {
+  position: fixed; /* เพื่อให้ footer อยู่ที่ด้านล่างสุดของหน้า */
+  left: 0;
+  bottom: 0;
+  background-color: #080808e6; /* สีพื้นหลังของ footer */
+  color: #ffffff; /* สีข้อความ */
+  text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+  width: 100%;
+  padding: 20px 0;
+  
+}
+
+.project-header {
+  display: grid;
+  margin-bottom: 5px;
+}
+
+.HeadLink {
+  color: inherit; /* Optional: inherit the color from the parent element */
+}
+
+/* Optional: Change color on hover */
+.HeadLink:hover {
+  color: #666666; /* Change to your preferred hover color */
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+.technologies div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-basis: calc(20% - 20px); /* Ensures 5 items per row with space */
+  margin: 10px;
+}
+
+.technologies img {
+  max-height: 50px;
+  margin-bottom: 10px;
+}
+
+.mobile-img {
+  max-width: 100%;
+  margin-right: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.mobile-img:hover {
+  transform: scale(1.08); /* Slightly zoom the image */
+}
+
+.btn-link {
+  color: #007bff;
+}
+
+@media (max-width: 576px) { /* Mobile devices */
+  .technologies div {
+    flex-basis: calc(33.33% - 20px); /* 1 item per row */
+    margin: 5px 0;
+    margin-left: 14px;
+  }
+
+  .mobile-img {
+    margin-right: 0;
+  }
+
+  .project-header {
+    flex-direction: column; /* จัดเรียงเนื้อหาในแนวนอน ไม่ใช่แนวตั้ง */
+    align-items: flex-start; /* จัดให้อยู่ทางซ้าย แต่ไม่ได้หมายถึงจัดตรงกลางในแนวแกน Y */
+    margin-bottom: 0;
+    align-self: flex-start; /* align-self ใช้เพื่อจัดวาง item ภายใน flex container */
+}
+
+  .btn-link {
+    margin-top: 10px;
+  }
+}
+
+
